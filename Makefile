@@ -15,7 +15,8 @@ ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) sou
 
 
 actualizar_docs: html
-	cp -R build/html/* ../pilas/data/manual/
+	cp -R build/html/* ../data/manual/
+	echo "La documentación se compió a pilas/data/manual."
 
 # TODO: volver a habilitar esta regla para que se genere nuevamente
 #       el manual en formato PDF para descargar desde la web.
